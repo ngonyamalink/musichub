@@ -1,0 +1,122 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .mainmenu-area .mainmenu .navbar-header {
+        float: none
+    }
+    .mainmenu-area .mainmenu ul.nav.navbar-nav {
+        text-align: left;
+    }
+    .mainmenu-area .mainmenu ul.nav.navbar-nav li a {
+        padding: 20px 15px;
+    }
+    .single-service {
+        min-height: 115px;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mainmenu-area .mainmenu .navbar-header {
+        float: none
+    }
+    .mainmenu-area .mainmenu ul.nav.navbar-nav {
+        text-align: left;
+    }
+    .mainmenu-area .mainmenu ul.nav.navbar-nav li a {
+        padding: 20px 15px;
+    }
+    .single-team {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .padding-top {
+        padding-top: 60px;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+    .mainmenu {
+        padding-right: 0;
+    }
+    .mainmenu .collapsed.navbar-toggle {
+        border: 1px solid #544ae9;
+        margin-top: 14px;
+    }
+    .mainmenu .collapsed .icon-bar {
+        background-color: #544ae9;
+    }
+    .mainmenu ul.nav.navbar-nav {
+        height: 300px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .mainmenu ul.nav.navbar-nav li {
+        display: block;
+        margin: 0 20%;
+        text-align: center;
+    }
+    .mainmenu .search-box {
+        right: 60px;
+    }
+    .searchbox-input {
+        width: 72%;
+    }
+    .header-text-area {
+        padding: 150px 0;
+    }
+    .header-text {
+        padding: 14px;
+    }
+    .header-text h2 {
+        font-size: 36px;
+    }
+    .about-area .page-title {
+        text-align: center;
+    }
+    .about-thumb {
+        margin-bottom: 120px;
+    }
+    .single-client {
+        margin: 20px 0;
+    }
+    .single-testimonial P {
+        width: 80%;
+    }
+    .single-team {
+        margin-bottom: 60px;
+    }
+    .single-pricing {
+        margin-bottom: 60px;
+    }
+    .contact-area .contact-form input#form-name,
+    .contact-area .contact-form input#form-email {
+        width: 100%;
+        margin-right: 0;
+    }
+    .footer-area {
+        text-align: center;
+    }
+    .footer-area .text-right {
+        text-align: center;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .team-area .team .col-xs-12 {
+        width: 50%;
+    }
+    .work-area .work .col-xs-12 {
+        width: 50%;
+    }
+}

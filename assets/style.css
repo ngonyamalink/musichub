@@ -1,0 +1,748 @@
+/*--------------------------------------------------------------------------------------
+Theme Name: Digitouchlab
+Theme URI: http://devitfamily.com
+Author URI: http://devitfamily.com
+Description: 100% Responsive, Highly Customizable, SEO Friendly Apps Theme using Twitter Bootstrap Latest, Search Engine Friendly.
+Author: DEVITFAMILY
+Version: 1.0
+----------------------------------------------------------------------------------------
+    1. Base-CSS
+    2. Header-Top
+        2.1 Mainmenu-Area
+        2.2 Header-Text-Area
+    3. About-Area-Start
+    4. Service-Area-Start
+    5. Work-Area-Start
+    6. Team-Area-Start
+    7. Testimonial-Area-Start
+    8. Pricing-Area-Start
+    9. Contact-Area-Start
+    10. Header-Area-Start
+----------------------------------------------------------------------------------------*/
+
+
+/* =======================
+1. Base-CSS 
+========================= */
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+
+html,
+body {
+    height: 100%;
+    background: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    font-weight: 400;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.btn {
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 50px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 1.6
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.padding-top {
+    padding-top: 100px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.gray-bg {
+    background-color: #f3f3f3;
+}
+
+.cross-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -22px;
+    text-align: center;
+}
+
+.pink-btn {
+    background-color: #ec1163;
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
+.pink-btn:hover {
+    background-color: #ffffff;
+    color: #ec1163;
+    border: 1px solid #ec1163;
+}
+.welcome-area,
+.about-area,
+.service-area {
+    background-color: #ffffff;
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+
+/*=====================
+2. Header-Top
+======================*/
+
+
+/*====================
+2.1 Mainmenu-Area
+======================*/
+
+.mainmenu-area {
+    padding: 15px 0;
+    width: 100%;
+    z-index: 999999;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    top: -100%;
+    -webkit-transition: .8s;
+    transition: .8s;
+}
+
+.mainmenu-area.stick {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 250px;
+}
+
+.mainmenu {
+    padding-right: 50px;
+    position: relative;
+}
+
+.sb-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mainmenu ul.nav.navbar-nav {
+    float: none;
+    text-align: right;
+}
+
+.mainmenu ul.nav.navbar-nav li {
+    float: none;
+    display: inline-block;
+    position: relative;
+}
+
+.mainmenu ul li:after {
+    background-color: #3f51b5;
+    bottom: 12px;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 0;
+}
+
+.mainmenu ul li:hover:after {
+    width: 40%;
+}
+
+.mainmenu ul li.active:after {
+    width: 70%;
+}
+
+.mainmenu ul.nav.navbar-nav li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    background: none;
+    padding: 20px 16px;
+}
+
+
+/*========================
+2.2 Header-Text-Area
+==========================*/
+
+.header-text-area {
+    padding: 200px 0;
+    position: relative;
+}
+
+.header-text-area .home-slider {
+    background: url(http://placehold.it/1800x720) no-repeat fixed center center/ cover;
+}
+
+.home-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -9;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.home-slider:after,
+.testimonials-area .overlay:after {
+    content: "";
+    background-color: #594eff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+
+.header-text {
+    padding: 50px;
+    border: 1px solid #ffffff;
+    color: #fff;
+    position: relative;
+}
+
+.header-text h2 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.page-title {
+    color: #717d8d;
+    font-weight: 300;
+}
+
+.page-title h2 {
+    background: rgba(0, 0, 0, 0) url("images/title-shape.png") no-repeat scroll center bottom;
+    color: #2c2a2a;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
+
+/*=========================
+3. About-Area-Start
+==========================*/
+
+.about-thumb {
+    border: 10px solid #4d5ebb;
+    display: inline-block;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+.about-thumb-bound {
+    margin-bottom: -60px;
+    margin-right: -60px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.about-details .about-skills li {
+    color: #717d8d;
+    margin-top: 50px;
+    padding-left: 60px;
+    position: relative;
+}
+
+.about-details .about-skills li span {
+    font-size: 40px;
+    left: 0;
+    margin-right: 20px;
+    position: absolute;
+    top: -18px;
+}
+
+
+/*=======================
+4.Service-Area-Start
+=========================*/
+
+.single-service {
+    padding-left: 70px;
+    margin-top: 70px;
+    position: relative;
+    color: #717d8d;
+}
+
+.service-area .page-title h2 {
+    margin-bottom: 0;
+}
+
+.single-service .service-icon {
+    background-color: #ec1163;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 18px;
+    height: 50px;
+    left: 0;
+    line-height: 2.7;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 50px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.single-service:hover .service-icon {
+    background-color: #ffffff;
+    color: #ec1163;
+    border: 1px solid #ec1163;
+}
+
+.single-service h3 {
+    color: #2c2a2a;
+    font-size: 22px;
+}
+
+
+/*=======================
+5. Work-Area-Start
+========================*/
+
+.work-area {
+    position: relative;
+    margin-top: 80px;
+}
+
+.work-area .row > div {
+    padding: 0;
+}
+
+.single-work {
+    position: relative;
+    overflow: hidden
+}
+
+.single-work img,
+.single-team img {
+    width: 100%;
+}
+
+.work-details {
+    height: 100%;
+    left: 0;
+    padding: 100px 20px 0 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-transition: .4s;
+    transition: .4s;
+    opacity: 0;
+    color: #fff;
+}
+
+.single-work:hover .work-details {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.work-details::before {
+    background-color: #4D5EBB;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+.single-work:hover .work-details::before {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.work-details a i.fa {
+    background-color: #ec1163;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 18px;
+    height: 50px;
+    line-height: 2.8;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 50px;
+}
+
+.work-details a:hover i.fa {
+    background-color: #ffffff;
+    color: #ec1163;
+}
+
+.work-details h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+/*========================
+6. Team-Area-Start
+==========================*/
+
+.team-datails {
+    background-color: #3f51b5;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.team-datails > h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-datails h4 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.team-social {
+    background-color: #ec1163;
+    border-radius: 0;
+    bottom: -10px;
+    left: 0;
+    padding: 10px 0;
+    position: absolute;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    z-index: -1;
+}
+
+.single-team .team-social a {
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+.single-team {
+    position: relative;
+}
+
+.single-team:hover .team-social {
+    border-radius: 0 0 50px 50px;
+    bottom: -50px;
+    z-index: 1;
+}
+
+
+/*==========================
+7. Testimonial-Area-Start
+============================*/
+
+.client-area .page-title,
+.testimonials-area .page-title,
+.contact-area .page-title {
+    margin-bottom: 50px;
+}
+
+.testimonials-area {
+    position: relative;
+}
+
+.testimonials-area .overlay {
+    background: url(http://placehold.it/1800x600) no-repeat fixed center center/ cover;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial {
+    padding-bottom: 20px;
+}
+
+.testimonials-area .page-title h2 {
+    color: #ffffff;
+    background-image: url("images/wh-title-shape.png");
+}
+
+.single-testimonial {
+    color: #ffffff;
+}
+
+.single-testimonial P {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+/*========================
+8. Pricing-Area-Start
+=========================*/
+
+.single-pricing:hover {
+    box-shadow: 0 11px 18px 2px #dddddd;
+    -webkit-transform: translate(0px, -5px);
+    transform: translate(0px, -10px);
+}
+
+.single-pricing {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.pricing-area .pric-head {
+    background-color: #333333;
+    padding: 15px 0;
+}
+
+.pricing-area .pric-head h2 {
+    color: #ffffff;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 26px;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.pricing-area .pric-body {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.pricing-area .pric-body span {
+    color: #666566;
+    display: block;
+    font-size: 12px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.pricing-area .pric-body .price-rate {
+    margin-bottom: 20px
+}
+
+.pricing-area .pric-body .price-rate h3 {
+    color: #2c2a2a;
+    display: inline-block;
+    font-size: 46px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.pricing-area .pric-body .price-rate sup {
+    font-size: 24px;
+}
+
+.pricing-area .pric-body .price-rate sub {
+    bottom: 0;
+    font-size: 18px;
+    right: 5px;
+}
+
+.pricing-area .pric-body ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-area .pric-body ul li {
+    border-top: 1px solid #ddd;
+    color: #717d8d;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.pricing-area .pric-body ul li:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+.pricing-area .pric-body a.btn {
+    background-color: #717d8d;
+    border-radius: 25px;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 6px 30px;
+}
+
+.blue-price .pric-head {
+    background-color: #3f51b5;
+}
+
+.pink-price .pric-head {
+    background-color: #ec1163;
+}
+
+.pricing-area .pric-body a.btn:hover {
+    background-color: #333333;
+}
+
+.blue-price .pric-body a.btn:hover {
+    background-color: #3f51b5;
+}
+
+.pink-price .pric-body a.btn:hover {
+    background-color: #ec1163;
+}
+
+
+/*========================
+9. Contact-Area-Start
+=========================*/
+
+.contact-area .contact-form input#form-name,
+.contact-area .contact-form input#form-email,
+.contact-area .contact-form input#form-subject,
+.contact-area .contact-form textarea {
+    border: medium none;
+    padding: 15px;
+    width: 100%;
+    border-bottom: 2px solid #eceff2;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.contact-area .contact-form input[type="text"]:focus,
+.contact-area .contact-form input[type="email"]:focus,
+.contact-area .contact-form textarea:focus {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.contact-area .contact-form input#form-name,
+.contact-area .contact-form input#form-email {
+    float: left;
+    width: 49%;
+}
+
+.contact-area .contact-form input[type="text"] {
+    margin-right: 2%;
+}
+
+.contact-area .contact-form .btn:hover {
+    background-color: #eceff2;
+}
+
+.contact-area .btn-lg {
+    padding: 15px 40px;
+}
+
+.contact-area::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #717d8d;
+    text-transform: uppercase;
+}
+
+.contact-area::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #717d8d;
+    text-transform: uppercase;
+}
+
+.contact-area:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #717d8d;
+    text-transform: uppercase;
+}
+
+.contact-area:-moz-placeholder {
+    /* Firefox 18- */
+    color: #717d8d;
+    text-transform: uppercase;
+}
+
+.footer-area {
+    background-color: #2c2a2a;
+    padding: 20px 0;
+}
+
+
+/*======================
+10. Header-Area-Start
+========================*/
+
+.copyright {
+    color: #ffffff;
+    line-height: 1;
+}
+
+.copyright img {
+    float: left;
+    margin-right: 10px;
+}
+
+.copyright p {
+    line-height: 3.5;
+    margin: 0;
+}
+
+.social-link a {
+    color: #ffffff;
+    line-height: 3;
+    margin-left: 10px;
+}
+
+.social-link a:hover {
+    color: #ec1163;
+}

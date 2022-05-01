@@ -1,0 +1,5 @@
+[13-Sep-2016 16:51:39 UTC] PHP Fatal error:  Call to undefined function base_url() in /home/visuafyi/public_html/100localmusic/application/config/routes.php on line 52
+[13-Sep-2016 17:18:23 UTC] PHP Fatal error:  Call to a member function hash_and_username_exist() on a non-object in /home/visuafyi/public_html/100localmusic/application/controllers/Registration.php on line 91
+[13-Sep-2016 20:01:35 UTC] PHP Fatal error:  Call to a member function hash_and_username_exist() on a non-object in /home/visuafyi/public_html/100localmusic/application/controllers/Registration.php on line 93
+[13-Sep-2016 20:05:18 UTC] PHP Fatal error:  Call to undefined method user_db::activate_artist() in /home/visuafyi/public_html/100localmusic/application/controllers/Registration.php on line 99
+[13-Sep-2016 20:05:24 UTC] PHP Fatal error:  Call to undefined method user_db::activate_artist() in /home/visuafyi/public_html/100localmusic/application/controllers/Registration.php on line 99
